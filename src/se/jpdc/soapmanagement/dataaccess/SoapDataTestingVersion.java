@@ -15,11 +15,11 @@ public class SoapDataTestingVersion implements SoapDataaccess {
 	@Override
 	public List<HandSoap> listAllSoaps() {
 		List<HandSoap> list = new ArrayList<>();
-		list.add(new HandSoap("Barnängen", "Godast", 5.50, 375));
-		list.add(new HandSoap("Barnängen", "Blommor", 5.75, 200));
-		list.add(new HandSoap("Viael", "Kanel", 4.50, 175));
+		list.add(new HandSoap("Testängen", "TestBlomma", 5.50, 375));
+		list.add(new HandSoap("Testängen", "Testlon och lök", 5.75, 200));
+		list.add(new HandSoap("Testona", "Testrosfrön", 4.50, 175));
 		
-		
+		System.out.println("SoapDataTestingVersion körd");
 		return list;
 	}
 
@@ -27,8 +27,8 @@ public class SoapDataTestingVersion implements SoapDataaccess {
 	public List<HandSoap> listSoapsByBrand(String brand) {
 		
 		List<HandSoap> list = new ArrayList<>();
-		list.add(new HandSoap("Barnängen", "Godast", 5.50, 375));
-		list.add(new HandSoap("Barnängen", "Blommor", 5.75, 200));
+		list.add(new HandSoap("Testängen", "TestBlomma", 5.50, 375));
+		list.add(new HandSoap("Testängen", "Testlon och lök", 5.75, 200));
 		
 		return list;
 	}

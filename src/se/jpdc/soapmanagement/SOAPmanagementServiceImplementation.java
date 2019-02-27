@@ -1,6 +1,6 @@
 package se.jpdc.soapmanagement;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import javax.ejb.Stateless;
