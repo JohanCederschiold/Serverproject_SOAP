@@ -60,7 +60,7 @@
      description="Compile all Java classes"
     	depends="prep">
         
-        <javac srcdir="${src}" destdir="${bin}" debug="true" encoding="ISO-8859-1">
+        <javac includeantruntime="false" srcdir="${src}" destdir="${bin}" debug="true" encoding="ISO-8859-1">
             <classpath refid="my.classpath"/>
         </javac>
         
@@ -72,8 +72,7 @@
 	   
 	   <jar destfile="${server-jarfile}" basedir="${bin}" >
 	   		<metainf dir="${src}/META-INF">
-	   			<include name="beans.xml" />
-	   			<!--   	    	<include name="persistence.xml" /> -->
+	   			<include name="beans.xml"/>
 	   		</metainf>
 	   	</jar>
 	   <echo message="Built the server jar file."/>   		  
