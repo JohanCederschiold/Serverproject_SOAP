@@ -14,6 +14,12 @@ public class SOAPmanagementServiceImplementation implements SOAPmanagementServic
 	
 	@Inject 
 	private SoapDataaccess service;
+	
+	@Override
+	public void addNewSoap(HandSoap handsoap) {
+		service.addNewSoap(handsoap);
+	}
+	
 
 	@Override
 	public List<HandSoap> listAllSoaps() {
@@ -24,5 +30,6 @@ public class SOAPmanagementServiceImplementation implements SOAPmanagementServic
 	public List<HandSoap> listSoapsByBrand(String brand) {
 		return service.listSoapsByBrand(brand);
 	}
+
 
 }

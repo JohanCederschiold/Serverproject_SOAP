@@ -15,6 +15,10 @@ public class SOAPmanagementWebServiceImplementation {
 	@Inject
 	private SOAPmanagementServiceLocal service;
 	
+	public void addNewSoap(HandSoap handsoap) {
+		service.addNewSoap(handsoap);
+	}
+	
 	public List<HandSoap> getAllSoaps() {
 		return service.listAllSoaps();
 	}

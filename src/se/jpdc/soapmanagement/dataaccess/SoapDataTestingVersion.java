@@ -11,6 +11,11 @@ import se.jpdc.soapmanagement.domain.HandSoap;
 @Stateless
 @Alternative
 public class SoapDataTestingVersion implements SoapDataaccess {
+	
+	@Override
+	public void addNewSoap(HandSoap handsoap) {
+		System.out.println("Tested add handsoap");
+	}
 
 	@Override
 	public List<HandSoap> listAllSoaps() {
@@ -32,5 +37,6 @@ public class SoapDataTestingVersion implements SoapDataaccess {
 		
 		return list;
 	}
+
 
 }
